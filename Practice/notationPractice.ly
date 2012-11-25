@@ -11,8 +11,14 @@
 \relative c' {
   \set tupletSpannerDuration = #(ly:make-moment 1 4)
 	\times 2/3 {e8 e e e e e a a a c c c}
+	<cis e a>2 \times 2/3  {f8 f f e e e}
 }
 
+\relative c' {
+	{<cis e a>2 
+			\times 2/3 {f8\rest f8\rest <cis e a>8 	<cis e a> <cis e a> <cis e a> } 
+		}
+}
 
 \relative c' {
 	\clef "treble_8"
